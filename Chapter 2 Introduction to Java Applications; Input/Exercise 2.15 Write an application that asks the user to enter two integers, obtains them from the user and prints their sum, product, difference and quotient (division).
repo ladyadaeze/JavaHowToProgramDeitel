@@ -1,0 +1,56 @@
+package javahowtoprogramdeitel;
+
+import java.util.Scanner;
+
+/**
+ * @author ladyadaeze
+ * @date Feb 4, 2021
+ * @time 07:52 AM
+ * 
+ * Exercise 2.15
+ * (Arithmetic) Write an application that asks the user to enter two integers, obtains them
+from the user and prints their sum, product, difference and quotient (division).
+*/
+
+public class javahowtoprogramdeitel {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		int num1;
+		int num2;
+		
+		System.out.println("Enter your first number: "); //prompt
+		num1 = scan.nextInt(); //read first integer
+		
+		System.out.println("Enter your second number: ");//prompt
+
+		num2 = scan.nextInt(); //read second integer
+		
+		int sum; sum = num1 + num2;
+		System.out.println("Your sum is: " + sum);
+		
+		int product; product = num1 * num2;
+		System.out.println("Your product is: " + product);
+		
+		int difference; difference = num1 - num2;
+		System.out.println("Your difference is: " + difference);
+		
+		int quotient; quotient = num1 / num2;
+		System.out.println("Your quotient is: " + quotient);
+		
+		
+
+	} //end method
+
+}
+
+/* Output:
+ * Enter your first number: 12
+ * Enter your second number: 2
+ * Your sum is: 14
+ * Your product is: 24
+ * Your difference is: 10
+ * Your quotient is: 6
+ * 
+ */
