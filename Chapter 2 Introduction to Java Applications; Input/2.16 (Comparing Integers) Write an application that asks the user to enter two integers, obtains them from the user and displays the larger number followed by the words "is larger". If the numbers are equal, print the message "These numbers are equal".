@@ -1,0 +1,54 @@
+package javahowtoprogramdeitel;
+
+import java.util.Scanner;
+
+/**
+ * @author ladyadaeze
+ * @date Feb 4, 2021
+ * @time 08:13 AM
+ * 
+ * Exercise 2.16 (Comparing Integers) Write an application that asks the user to enter two integers, obtains
+them from the user and displays the larger number followed by the words "is larger". If the numbers
+are equal, print the message "These numbers are equal".
+*/
+
+public class javahowtoprogramdeitel {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		int num1;
+		int num2;
+		
+		System.out.println("Enter your first number: "); //prompt
+		num1 = scan.nextInt(); //read first integer
+		
+		System.out.println("Enter your second number: ");//prompt
+
+		num2 = scan.nextInt(); //read second integer
+		
+		if(num1 > num2) {
+			System.out.println("The first number " + num1 + " is larger!");
+			
+		}
+		if(num2 > num1) {
+			System.out.println("The second number " + num2 + " is larger!");
+		}
+		
+		else System.out.println("They are both equal!");
+
+		
+
+	} //end method
+
+}
+
+/* Output:
+ * Enter your first number: 23
+ * Enter your second number: 23
+ * They are both equal!
+ * 
+ * Enter your first number: 12
+ * Enter your second number: 987
+ * The second number 987 is larger!
+ */
